@@ -4,7 +4,6 @@
 (function(){
     const uniqueCharacters = (str) => {
       let value = [...new Set(str)];
-      console.log(value)
 
       if(str.length === value.length){
           return true;
