@@ -21,8 +21,38 @@
     }
     }
 
+    const isPermutationEfficientAndLinear = (str1, str2) => {
+        const arrStr1 = [...str1];
+        const arrStr2 = [...str2];
+        const hash = {};
+
+        // Store it in hash 
+        for(let i=0; i< arrStr1.length; i++){
+            let c = arrStr1[i];
+            if(hash[c]){
+                hash[c]++;
+            }else{
+                hash[c] = 1;
+            }
+        }
+
+        console.log('Hash place', hash);
+
+        for(let j=0; j< arrStr2.length; j++){
+            let c = arrStr2[j];
+            if(hash[c] && hash[c]!==0){
+                console.log(hash);
+                hash[c] --;
+            }else{
+                return false
+            }
+        }
+        return true;
+    }
+
 
 
 
     console.log(isPermutationNotEfficient('cfab', 'bafc'))
+    console.log(isPermutationEfficientAndLinear('cfab', 'bafc'))
 })();
