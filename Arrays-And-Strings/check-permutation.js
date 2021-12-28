@@ -32,16 +32,16 @@
             if(hash[c]){
                 hash[c]++;
             }else{
+                // This is first iteration.
                 hash[c] = 1;
             }
         }
 
-        console.log('Hash place', hash);
 
+        // Remove from hash if its available.
         for(let j=0; j< arrStr2.length; j++){
             let c = arrStr2[j];
             if(hash[c] && hash[c]!==0){
-                console.log(hash);
                 hash[c] --;
             }else{
                 return false
@@ -53,6 +53,6 @@
 
 
 
-    console.log(isPermutationNotEfficient('cfab', 'bafc'))
-    console.log(isPermutationEfficientAndLinear('cfab', 'bafc'))
+isPermutationNotEfficient('cfab', 'bafc')
+    isPermutationEfficientAndLinear('cfab', 'bafc')
 })();
