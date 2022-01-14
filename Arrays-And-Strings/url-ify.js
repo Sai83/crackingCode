@@ -18,5 +18,5 @@ const urlifyspaces = (str) => {
 }
 
 
-console.log('Urlify: ', urlifyspaces('mr john smith'));
+urlifyspaces('mr john smith');
 

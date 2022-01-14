@@ -24,6 +24,6 @@
 
 
     
-    console.log(uniqueCharacters('abdda'));
-    console.log('No Set', uniqueCharactersNoSet('abdda'))
+ uniqueCharacters('abdda');
+     uniqueCharactersNoSet('abdda');
 })();
