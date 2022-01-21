@@ -1,6 +1,6 @@
 /**
  * Palindrome Permutation
- * Input: Tact Coa
+ * Input: carerac
  * Output: true taco cat or atco cta
  */
 
@@ -24,6 +24,7 @@
             const value = hash[key];
             count+= value%2;
         })
+        console.log(count);
         return count<=1;
                 
     }
@@ -31,6 +32,8 @@
     
     
     
-    console.log(palindromePermutation('aab'))
+    console.log(palindromePermutation('Tact Coa'))
     //console.log(palindromePermutation('carerac'))
 })();
+
+
